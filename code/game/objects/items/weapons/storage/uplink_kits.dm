@@ -276,6 +276,15 @@
 	new /obj/item/ammo_storage/speedloader/a357(src)
 	return
 
+/obj/item/weapon/storage/box/syndie_kit/stechtkin
+	name = "box (stechtkin pistol)"
+
+/obj/item/weapon/storage/box/syndie_kit/stechtkin/New()
+	..()
+	new /obj/item/weapon/gun/projectile/pistol(src)
+	new /obj/item/gun_part/silencer(src)
+	return
+
 obj/item/weapon/storage/box/syndie_kit/cheaptide
 	name = "box (CT)"
 
@@ -385,7 +394,7 @@ obj/item/weapon/storage/box/syndie_kit/cheaptide
 	new /obj/item/ammo_storage/box/BMG50(src)
 	new /obj/item/ammo_storage/box/BMG50(src)
 	new /obj/item/clothing/glasses/thermal/syndi(src)
-	
+
 /obj/item/weapon/storage/box/syndie_kit/spotter
 	name = "Spotter"
 
@@ -411,7 +420,7 @@ obj/item/weapon/storage/box/syndie_kit/cheaptide
 	new /obj/item/clothing/glasses/sunglasses/sechud/syndishades(src)
 	new /obj/item/device/reportintercom(src)
 	dispense_cash(10000, src)
-	
+
 /obj/item/weapon/storage/box/syndie_kit/shootershotty
 	name = "Shotgun"
 
@@ -464,11 +473,11 @@ obj/item/weapon/storage/box/syndie_kit/cheaptide
 		if("sniperspotter")
 			new /obj/item/weapon/storage/box/syndie_kit/sniper(src)
 			new /obj/item/weapon/storage/box/syndie_kit/spotter(src)
-		
+
 		if("scammers")
 			new /obj/item/weapon/storage/box/syndie_kit/scammer(src)
 			new /obj/item/weapon/storage/box/syndie_kit/scammer(src)
-		
+
 		if("workplaceshooter")
 			new /obj/item/weapon/storage/box/syndie_kit/shootershotty(src)
 			new /obj/item/weapon/storage/box/syndie_kit/shooteruzis(src)
