@@ -80,9 +80,9 @@
 				var/String = file2text(http["CONTENT"])
 				var/tempPos = findtext(String, "\"temp_min\":")+11
 				temperature = text2num(copytext(String, tempPos, tempPos+4))
-			if(temperature > 40)
-				message_admins("Skipping map [potential] due to it being too hot outside. Ideal temp is below 40F, found [temperature].")
-				warning("Skipping map [potential] due to  it being too hot outside. Ideal temp is below 40F, found [temperature].")
+			if(temperature > 30)
+				message_admins("Skipping map [potential] due to it being too hot outside. Ideal temp is below 30F, found [temperature].")
+				warning("Skipping map [potential] due to  it being too hot outside. Ideal temp is below 30F, found [temperature].")
 				binary = null
 				continue
 		if(potential == "Lamprey/") //Available if the station is wrecked enough
